@@ -1,8 +1,8 @@
 import React from "react";
-import { View } from "react-native";
+import Navbar from "../components/Navbar";
 
 function Main() {
-  return <View />;
+  return <Navbar />;
 }
 
 export default Main;
