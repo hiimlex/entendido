@@ -6,6 +6,7 @@ import Main from "./pages/Main";
 
 const Routes = createAppContainer(
   createStackNavigator({
+    //rotas
     Main: {
       screen: Main,
       navigationOptions: {

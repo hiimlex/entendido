@@ -1,5 +1,6 @@
 import React from "react";
 import { View, StyleSheet } from "react-native";
+//framework extra
 import { Header, Divider, Avatar } from "react-native-elements";
 import Logo from "./Logo";
 
@@ -83,7 +84,7 @@ function Navbar() {
     </View>
   );
 }
-
+//estilização
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#db0024",

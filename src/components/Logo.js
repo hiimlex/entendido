@@ -1,6 +1,6 @@
 import React from "react";
 import { Image } from "react-native";
-
+//componente para adequar a logo
 function Logo() {
   return (
     <Image
