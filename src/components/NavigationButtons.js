@@ -1,19 +1,15 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
-//framework extra
-import { Header, Divider, Avatar } from "react-native-elements";
+import { View, StyleSheet, Text } from "react-native";
+import { Avatar } from "react-native-elements";
 import Logo from "./Logo";
 
-function Navbar() {
+function NavigationButtons({ navigation }) {
   return (
-    <View>
-      <Header
-        leftComponent={{ icon: "account-circle", color: "#fff", size: 32 }}
-        centerComponent={<Logo />}
-        rightComponent={{ icon: "notifications", color: "#fff", size: 32 }}
-        backgroundColor="#db0024"
-      />
-      <View style={styles.container}>
+    <View style={styles.container}>
+      <View>
+        <Text style={styles.text}>Noticias</Text>
+      </View>
+      <View style={styles.items}>
         <Avatar
           rounded
           size="medium"
@@ -84,17 +80,27 @@ function Navbar() {
     </View>
   );
 }
+
 //estilização
 const styles = StyleSheet.create({
   container: {
     backgroundColor: "#db0024",
-    flexDirection: "row",
-    justifyContent: "space-around",
     paddingVertical: 12,
     paddingHorizontal: 10,
     borderBottomLeftRadius: 14,
     borderBottomRightRadius: 14
+  },
+  items: {
+    flexDirection: "row",
+    justifyContent: "space-around"
+  },
+  text: {
+    textAlign: "center",
+    color: "#fff",
+    fontSize: 24,
+    marginBottom: 12,
+    fontWeight: "bold"
   }
 });
 
-export default Navbar;
+export default NavigationButtons;
