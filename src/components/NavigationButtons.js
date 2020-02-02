@@ -102,11 +102,11 @@ const styles = StyleSheet.create({
     justifyContent: "space-around"
   },
   text: {
+    fontFamily: "PoetsenOne-Regular",
     textAlign: "center",
     color: "#fff",
     fontSize: 28,
-    marginBottom: 12,
-    fontWeight: "bold"
+    marginBottom: 12
   }
 });
 

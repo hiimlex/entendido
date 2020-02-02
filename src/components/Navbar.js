@@ -4,9 +4,17 @@ import { Header, Icon } from "react-native-elements";
 import Logo from "./Logo";
 import { useNavigation, useNavigationState } from "react-navigation-hooks";
 
-function Navbar() {
+function Navbar({ route }) {
   const { navigate } = useNavigation();
   const { routeName } = useNavigationState();
+
+  const NavigateToRoute = () => {
+    if (route) {
+      navigate(route);
+    } else {
+      navigate("Main");
+    }
+  };
 
   return (
     <Header
@@ -15,9 +23,7 @@ function Navbar() {
           name={routeName === "Main" ? null : "arrow-back"}
           color="#fff"
           size={32}
-          onPress={() => {
-            navigate("Main");
-          }}
+          onPress={NavigateToRoute}
           activeOpacity={0.8}
         />
       }

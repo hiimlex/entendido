@@ -5,7 +5,7 @@ function Logo() {
   return (
     <Image
       source={require("../../assets/logo.png")}
-      style={{ width: 140, height: 30 }}
+      style={{ width: 145, height: 30, justifyContent: "center" }}
     />
   );
 }

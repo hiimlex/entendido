@@ -5,7 +5,7 @@ function CardImg() {
   return (
     <View style={styles.card}>
       <Image
-        source={require("../../assets/cardimg.jpg")}
+        source={require("../../../assets/cardimg.jpg")}
         style={styles.image}
       />
     </View>

@@ -20,7 +20,7 @@ function SearchComponent(props) {
             marginVertical: 6
           }}
           inputContainerStyle={{ height: 25 }}
-          placeholder={`Pesquisar por ${props.title}`}
+          placeholder="Buscar"
           value={text}
           onChangeText={setText}
           autoCorrect={false}
@@ -39,11 +39,11 @@ const styles = StyleSheet.create({
     borderBottomRightRadius: 14
   },
   text: {
+    fontFamily: "PoetsenOne-Regular",
     textAlign: "center",
     color: "#fff",
     fontSize: 28,
-    marginBottom: 12,
-    fontWeight: "bold"
+    marginBottom: 12
   }
 });
 
