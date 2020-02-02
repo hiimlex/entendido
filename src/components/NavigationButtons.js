@@ -16,7 +16,7 @@ function NavigationButtons({ navigation }) {
           icon={{
             name: "building",
             type: "font-awesome",
-            color: "#afafaf",
+            color: "#696969",
             size: 24
           }}
           overlayContainerStyle={{ backgroundColor: "white" }}
@@ -27,7 +27,7 @@ function NavigationButtons({ navigation }) {
           icon={{
             name: "map-marker",
             type: "font-awesome",
-            color: "#afafaf",
+            color: "#696969",
             size: 28
           }}
           overlayContainerStyle={{ backgroundColor: "white" }}
@@ -38,7 +38,7 @@ function NavigationButtons({ navigation }) {
           icon={{
             name: "bullhorn",
             type: "font-awesome",
-            color: "#afafaf",
+            color: "#696969",
             size: 24
           }}
           overlayContainerStyle={{ backgroundColor: "white" }}
@@ -49,7 +49,7 @@ function NavigationButtons({ navigation }) {
           icon={{
             name: "handshake-o",
             type: "font-awesome",
-            color: "#afafaf",
+            color: "#696969",
             size: 24
           }}
           overlayContainerStyle={{ backgroundColor: "white" }}
@@ -60,7 +60,7 @@ function NavigationButtons({ navigation }) {
           icon={{
             name: "balance-scale",
             type: "font-awesome",
-            color: "#afafaf",
+            color: "#696969",
             size: 24
           }}
           overlayContainerStyle={{ backgroundColor: "white" }}
@@ -71,7 +71,7 @@ function NavigationButtons({ navigation }) {
           icon={{
             name: "book",
             type: "font-awesome",
-            color: "#afafaf",
+            color: "#696969",
             size: 28
           }}
           overlayContainerStyle={{ backgroundColor: "white" }}
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   text: {
     textAlign: "center",
     color: "#fff",
-    fontSize: 24,
+    fontSize: 28,
     marginBottom: 12,
     fontWeight: "bold"
   }
