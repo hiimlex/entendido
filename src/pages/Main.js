@@ -5,7 +5,7 @@ import { Button } from "react-native-elements";
 //components
 import Navbar from "../components/Navbar";
 import NavigationButtons from "../components/NavigationButtons";
-import CardImg from "../components/cards/CardImg";
+import CardImg from "../components/CardImg";
 
 function Main() {
   return (
