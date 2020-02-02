@@ -18,6 +18,7 @@ function Navbar() {
           onPress={() => {
             navigate("Main");
           }}
+          activeOpacity={0.8}
         />
       }
       centerComponent={<Logo />}

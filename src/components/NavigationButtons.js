@@ -2,8 +2,11 @@ import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Avatar } from "react-native-elements";
 import Logo from "./Logo";
+import { useNavigation } from "react-navigation-hooks";
 
-function NavigationButtons({ navigation }) {
+function NavigationButtons() {
+  const { navigate } = useNavigation();
+
   return (
     <View style={styles.container}>
       <View>
@@ -20,6 +23,10 @@ function NavigationButtons({ navigation }) {
             size: 24
           }}
           overlayContainerStyle={{ backgroundColor: "white" }}
+          onPress={() => {
+            navigate("Oportunidades");
+          }}
+          activeOpacity={0.7}
         />
         <Avatar
           rounded
