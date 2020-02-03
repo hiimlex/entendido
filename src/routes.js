@@ -8,6 +8,7 @@ import Notifications from "./pages/Notifications";
 import Oportunidades from "./pages/Oportunidades";
 import Estudo from "./pages/Estudo";
 import Emprego from "./pages/Emprego";
+import Noticias from "./pages/Noticias";
 
 //Rotas
 const Routes = createAppContainer(
@@ -17,9 +18,12 @@ const Routes = createAppContainer(
       Notifications: { screen: Notifications },
       Oportunidades: { screen: Oportunidades },
       Estudo: { screen: Estudo },
-      Emprego: { screen: Emprego }
+      Emprego: { screen: Emprego },
+      Noticias: { screen: Noticias }
     },
-    { defaultNavigationOptions: { headerShown: false } }
+    {
+      defaultNavigationOptions: { headerShown: false, animationEnabled: false }
+    }
   )
 );
 

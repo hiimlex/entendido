@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     elevation: 6,
     backgroundColor: "#fff",
     marginHorizontal: 20,
-    marginTop: 10,
+    marginTop: 15,
     borderRadius: 4,
     flexDirection: "row"
   },
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   },
   textCard: {
     justifyContent: "center",
-    alignItems: "center",
+    alignItems: "flex-start",
     flex: 1,
     flexGrow: 1,
     width: 0

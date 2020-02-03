@@ -10,7 +10,7 @@ function Notifications() {
     <>
       <Navbar />
       <SearchComponent title="Notificações" />
-      <View style={{ flexGrow: 1 }}>
+      <View style={{ flexGrow: 1, marginTop: 10 }}>
         <CardNotification
           icon="oportunidade"
           text="Vaga: Aulixiar Administrativo."

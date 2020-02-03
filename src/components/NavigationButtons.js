@@ -9,80 +9,53 @@ function NavigationButtons() {
 
   return (
     <View style={styles.container}>
-      <View>
-        <Text style={styles.text}>Noticias</Text>
-      </View>
       <View style={styles.items}>
-        <Avatar
-          rounded
-          size="medium"
-          icon={{
-            name: "building",
-            type: "font-awesome",
-            color: "#696969",
-            size: 24
-          }}
-          overlayContainerStyle={{ backgroundColor: "white" }}
-          onPress={() => {
-            navigate("Oportunidades");
-          }}
-          activeOpacity={0.7}
-        />
-        <Avatar
-          rounded
-          size="medium"
-          icon={{
-            name: "map-marker",
-            type: "font-awesome",
-            color: "#696969",
-            size: 28
-          }}
-          overlayContainerStyle={{ backgroundColor: "white" }}
-        />
-        <Avatar
-          rounded
-          size="medium"
-          icon={{
-            name: "bullhorn",
-            type: "font-awesome",
-            color: "#696969",
-            size: 24
-          }}
-          overlayContainerStyle={{ backgroundColor: "white" }}
-        />
-        <Avatar
-          rounded
-          size="medium"
-          icon={{
-            name: "handshake-o",
-            type: "font-awesome",
-            color: "#696969",
-            size: 24
-          }}
-          overlayContainerStyle={{ backgroundColor: "white" }}
-        />
-        <Avatar
-          rounded
-          size="medium"
-          icon={{
-            name: "balance-scale",
-            type: "font-awesome",
-            color: "#696969",
-            size: 24
-          }}
-          overlayContainerStyle={{ backgroundColor: "white" }}
-        />
-        <Avatar
-          rounded
-          size="medium"
-          icon={{
-            name: "book",
-            type: "font-awesome",
-            color: "#696969",
-            size: 28
-          }}
-          overlayContainerStyle={{ backgroundColor: "white" }}
-        />
+        <View style={styles.item}>
+          <Avatar
+            rounded
+            size="medium"
+            icon={{
+              name: "building",
+              type: "font-awesome",
+              color: "#696969",
+              size: 24
+            }}
+            overlayContainerStyle={{ backgroundColor: "white" }}
+            onPress={() => {
+              navigate("Oportunidades");
+            }}
+            activeOpacity={0.9}
+          />
+          <Text style={styles.subtitle}>Oportunidades</Text>
+        </View>
+        <View style={styles.item}>
+          <Avatar
+            rounded
+            size="medium"
+            icon={{
+              name: "bullhorn",
+              type: "font-awesome",
+              color: "#696969",
+              size: 24
+            }}
+            overlayContainerStyle={{ backgroundColor: "white" }}
+          />
+          <Text style={styles.subtitle}>Eventos</Text>
+        </View>
+        <View style={styles.item}>
+          <Avatar
+            rounded
+            size="medium"
+            icon={{
+              name: "handshake-o",
+              type: "font-awesome",
+              color: "#696969",
+              size: 24
+            }}
+            overlayContainerStyle={{ backgroundColor: "white" }}
+          />
+          <Text style={styles.subtitle}>Centrais de Apoio</Text>
+        </View>
       </View>
     </View>
   );
@@ -99,14 +72,17 @@ const styles = StyleSheet.create({
   },
   items: {
     flexDirection: "row",
-    justifyContent: "space-around"
+    justifyContent: "space-evenly"
   },
-  text: {
-    fontFamily: "PoetsenOne-Regular",
-    textAlign: "center",
+  item: {
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center"
+  },
+  subtitle: {
     color: "#fff",
-    fontSize: 28,
-    marginBottom: 12
+    fontWeight: "bold",
+    fontSize: 16
   }
 });
 
