@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Overlay, Button } from "react-native-elements";
+import color from "./color";
 
 function CardVagas(props) {
   const [visible, setVisible] = useState(false);
@@ -26,7 +27,7 @@ function CardVagas(props) {
           <Button
             title="Fechar"
             type="clear"
-            color="#db0024"
+            color={color}
             containerStyle={{
               alignItems: "flex-end",
               justifyContent: "flex-end"

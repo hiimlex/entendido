@@ -2,6 +2,7 @@ import React from "react";
 import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { Icon } from "react-native-elements";
 import { useNavigation } from "react-navigation-hooks";
+import color from "./color";
 
 function CardOportunidades(props) {
   const { navigate } = useNavigation();
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     fontFamily: "PoetsenOne-Regular",
     textAlign: "justify",
     marginHorizontal: 5,
-    color: "#db0024"
+    color: [color]
   }
 });
 

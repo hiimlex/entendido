@@ -3,6 +3,7 @@ import { View, StyleSheet, Text } from "react-native";
 import { Avatar } from "react-native-elements";
 import Logo from "./Logo";
 import { useNavigation } from "react-navigation-hooks";
+import color from "./color";
 
 function NavigationButtons() {
   const { navigate } = useNavigation();
@@ -64,7 +65,7 @@ function NavigationButtons() {
 //estilização
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#db0024",
+    backgroundColor: [color],
     paddingVertical: 12,
     paddingHorizontal: 10,
     borderBottomLeftRadius: 14,

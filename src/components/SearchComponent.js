@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { SearchBar } from "react-native-elements";
+import color from "./color";
 
 function SearchComponent(props) {
   const [text, setText] = useState("");
@@ -32,7 +33,7 @@ function SearchComponent(props) {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#db0024",
+    backgroundColor: [color],
     paddingVertical: 12,
     paddingHorizontal: 10,
     borderBottomLeftRadius: 14,

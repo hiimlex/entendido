@@ -3,6 +3,7 @@ import { Text } from "react-native";
 import { Header, Icon } from "react-native-elements";
 import Logo from "./Logo";
 import { useNavigation, useNavigationState } from "react-navigation-hooks";
+import color from "./color";
 
 function Navbar({ route }) {
   const { navigate } = useNavigation();
@@ -38,7 +39,7 @@ function Navbar({ route }) {
           }}
         />
       }
-      backgroundColor="#db0024"
+      backgroundColor={color}
     />
   );
 }
