@@ -11,14 +11,11 @@ function CardImg(props) {
       activeOpacity={0.85}
       onPress={() => {
         navigate("Noticias", {
-          uri: `${props.uri}`
+          uri: `${props.link}`
         });
       }}
     >
-      <Image
-        source={require("../../assets/cardimg.jpg")}
-        style={styles.image}
-      />
+      <Image source={props.imageUri} style={styles.image} />
     </TouchableOpacity>
   );
 }
