@@ -1,8 +1,10 @@
 import React from "react";
 import { Text } from "react-native";
 import { Header, Icon } from "react-native-elements";
-import Logo from "./Logo";
+
 import { useNavigation, useNavigationState } from "react-navigation-hooks";
+
+import Logo from "./Logo";
 import color from "./color";
 
 function Navbar({ route }) {

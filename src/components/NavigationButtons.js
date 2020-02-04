@@ -1,9 +1,11 @@
 import React from "react";
 import { View, StyleSheet, Text } from "react-native";
 import { Avatar } from "react-native-elements";
-import Logo from "./Logo";
+
 import { useNavigation } from "react-navigation-hooks";
+
 import color from "./color";
+import Logo from "./Logo";
 
 function NavigationButtons() {
   const { navigate } = useNavigation();
@@ -40,6 +42,10 @@ function NavigationButtons() {
               size: 24
             }}
             overlayContainerStyle={{ backgroundColor: "white" }}
+            onPress={() => {
+              navigate("Eventos");
+            }}
+            activeOpacity={0.9}
           />
           <Text style={styles.subtitle}>Eventos</Text>
         </View>
@@ -54,6 +60,10 @@ function NavigationButtons() {
               size: 24
             }}
             overlayContainerStyle={{ backgroundColor: "white" }}
+            onPress={() => {
+              navigate("Apoio");
+            }}
+            activeOpacity={0.9}
           />
           <Text style={styles.subtitle}>Centrais de Apoio</Text>
         </View>

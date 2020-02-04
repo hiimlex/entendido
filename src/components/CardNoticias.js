@@ -1,8 +1,9 @@
 import React from "react";
 import { View, StyleSheet, Image, TouchableOpacity } from "react-native";
+
 import { useNavigation } from "react-navigation-hooks";
 
-function CardImg(props) {
+function CardNoticias(props) {
   const { navigate } = useNavigation();
 
   return (
@@ -31,4 +32,4 @@ const styles = StyleSheet.create({
   }
 });
 
-export default CardImg;
+export default CardNoticias;

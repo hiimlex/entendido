@@ -12,11 +12,13 @@ function Trabalho() {
       <View style={{ marginTop: 10 }}>
         <CardVagas
           text="Vaga: Auxiliar administrativo."
-          details="Pre-requisitos: Conhecer Excel e Word."
+          requisitos="Conhecer Excel e Word."
+          documentos="RG, CPF, Curriculo, Histórico Escolar ou Certificado de Conclusão do Ensino Médio."
         />
         <CardVagas
           text="Vaga: Professor particular."
-          details="Pre-requisitos: Ter concluido o Ensino Médio."
+          requisitos="Ter concluido o Ensino Médio e disponibilidade para trabalhar 48 horas semanais."
+          documentos="RG, CPF, Histórico Escolar ou Certificado de Conclusão do Ensino Médio."
         />
       </View>
     </>

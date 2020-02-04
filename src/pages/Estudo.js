@@ -13,11 +13,13 @@ function Estudo() {
       <View style={{ marginTop: 10 }}>
         <CardVagas
           text="CRAS abre Turmas para EJA no Bairro João Cabral."
-          details="Serão aceitos alunos com idade a partir de 18 anos, documentos exigidos: RG, CPF, Trânsferência"
+          requisitos="Serão aceitos alunos com idade a partir de 18 anos."
+          documentos="RG, CPF, Trânsferência."
         />
         <CardVagas
           text="Cursos Técnicos Profissionalizantes."
-          details="Serão aceitos alunos que já concluírem o Ensino fundamental, documentos exigidos: RG, CPF, Trânsferência"
+          requisitos="Serão aceitos alunos que já concluírem o Ensino fundamental."
+          documentos="RG, CPF, Trânsferência."
         />
       </View>
     </>

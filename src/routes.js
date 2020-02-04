@@ -9,6 +9,8 @@ import Oportunidades from "./pages/Oportunidades";
 import Estudo from "./pages/Estudo";
 import Emprego from "./pages/Emprego";
 import Noticias from "./pages/Noticias";
+import Eventos from "./pages/Eventos";
+import Apoio from "./pages/Apoio";
 
 //Rotas
 const Routes = createAppContainer(
@@ -19,7 +21,9 @@ const Routes = createAppContainer(
       Oportunidades: { screen: Oportunidades },
       Estudo: { screen: Estudo },
       Emprego: { screen: Emprego },
-      Noticias: { screen: Noticias }
+      Noticias: { screen: Noticias },
+      Eventos: { screen: Eventos },
+      Apoio: { screen: Apoio }
     },
     {
       defaultNavigationOptions: { headerShown: false, animationEnabled: false }

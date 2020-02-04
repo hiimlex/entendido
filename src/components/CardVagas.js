@@ -1,13 +1,14 @@
 import React, { useState } from "react";
 import { View, Text, StyleSheet, TouchableOpacity } from "react-native";
 import { Overlay, Button } from "react-native-elements";
+
 import color from "./color";
 
 function CardVagas(props) {
   const [visible, setVisible] = useState(false);
 
   const SetIsVisible = () => {
-    if (props.details) {
+    if (props.requisitos) {
       setVisible(true);
     }
   };
@@ -21,7 +22,12 @@ function CardVagas(props) {
       <Overlay isVisible={visible} overlayStyle={styles.overlay}>
         <>
           <View>
-            <Text style={styles.text}>{props.details}</Text>
+            <Text style={styles.text}>
+              Pre-Requisitos: {props.requisitos} {"\n"}
+            </Text>
+            <Text style={styles.text}>
+              Documentos Necessários: {props.documentos}
+            </Text>
           </View>
 
           <Button
@@ -35,6 +41,7 @@ function CardVagas(props) {
             onPress={() => {
               setVisible(false);
             }}
+            titleStyle={{ fontSize: 18, fontWeight: "bold" }}
           />
         </>
       </Overlay>
