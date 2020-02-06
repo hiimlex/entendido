@@ -44,13 +44,13 @@ function CardEventos(props) {
 }
 
 const styles = StyleSheet.create({
-  card: { marginHorizontal: 10, marginTop: 20 },
+  card: { marginHorizontal: 10, marginTop: 20, elevation: 8 },
   image: {
     width: "auto",
     height: 150,
+    borderRadius: 12,
     flexGrow: 1,
-    resizeMode: "contain",
-    borderRadius: 10
+    resizeMode: "contain"
   },
   overlay: {
     width: 370,

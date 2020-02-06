@@ -7,7 +7,7 @@ import CardNotification from "../components/CardNotification";
 
 function Notifications() {
   return (
-    <>
+    <View style={{ backgroundColor: "#EEEEEE", flexGrow: 1 }}>
       <Navbar />
       <SearchComponent title="Notificações" />
       <View style={{ flexGrow: 1, marginTop: 10 }}>
@@ -32,7 +32,7 @@ function Notifications() {
           text="Cras do bairro João Cabral abre turmas para o EJA."
         />
       </View>
-    </>
+    </View>
   );
 }
 

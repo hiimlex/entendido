@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
   card: {
     width: "auto",
     height: 70,
-    elevation: 6,
+    elevation: 12,
     backgroundColor: "#fff",
     marginHorizontal: 20,
     marginTop: 15,

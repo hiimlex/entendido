@@ -7,7 +7,7 @@ import CardVagas from "../components/CardVagas";
 
 function Estudo() {
   return (
-    <>
+    <View style={{ backgroundColor: "#EEEEEE", flexGrow: 1 }}>
       <Navbar route="Oportunidades" />
       <SearchComponent title="Oportunidades de estudo" />
       <View style={{ marginTop: 10 }}>
@@ -22,7 +22,7 @@ function Estudo() {
           documentos="RG, CPF, Trânsferência."
         />
       </View>
-    </>
+    </View>
   );
 }
 

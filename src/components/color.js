@@ -1,4 +1,4 @@
-let color = "#db0024";
+let color = "#781e7a";
 
 // const changeColor = col => {
 //   color = col;

@@ -11,6 +11,7 @@ import Emprego from "./pages/Emprego";
 import Noticias from "./pages/Noticias";
 import Eventos from "./pages/Eventos";
 import Apoio from "./pages/Apoio";
+import Ajuda from "./pages/Ajuda";
 
 //Rotas
 const Routes = createAppContainer(
@@ -23,7 +24,8 @@ const Routes = createAppContainer(
       Emprego: { screen: Emprego },
       Noticias: { screen: Noticias },
       Eventos: { screen: Eventos },
-      Apoio: { screen: Apoio }
+      Apoio: { screen: Apoio },
+      Ajuda: { screen: Ajuda }
     },
     {
       defaultNavigationOptions: { headerShown: false, animationEnabled: false }

@@ -18,7 +18,7 @@ function CardOportunidades(props) {
       }}
     >
       <View style={{ justifyContent: "center", marginTop: 22 }}>
-        <Icon name={props.icon} type="font-awesome" size={56} color="#494949" />
+        <Icon name={props.icon} type="font-awesome" size={56} color="#292929" />
       </View>
       <View style={styles.textCard}>
         <Text style={styles.text}>{props.text}</Text>
@@ -31,11 +31,11 @@ const styles = StyleSheet.create({
   card: {
     width: "auto",
     height: 140,
-    elevation: 6,
+    elevation: 12,
     backgroundColor: "#fff",
     marginHorizontal: 20,
     marginTop: 30,
-    borderRadius: 4
+    borderRadius: 12
   },
   textCard: {
     justifyContent: "center",
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     marginTop: 10
   },
   text: {
-    fontSize: 28,
+    fontSize: 30,
     fontFamily: "PoetsenOne-Regular",
     textAlign: "justify",
     marginHorizontal: 5,

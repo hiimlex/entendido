@@ -22,13 +22,17 @@ function CardNoticias(props) {
 }
 
 const styles = StyleSheet.create({
-  card: { marginHorizontal: 10, marginTop: 20 },
+  card: {
+    marginHorizontal: 10,
+    marginTop: 20,
+    elevation: 8
+  },
   image: {
     width: "auto",
     height: 150,
     flexGrow: 1,
     resizeMode: "contain",
-    borderRadius: 10
+    borderRadius: 12
   }
 });
 

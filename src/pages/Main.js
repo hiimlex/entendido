@@ -1,6 +1,7 @@
 import React from "react";
-import { View, StyleSheet, Text } from "react-native";
+import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
 import { Button } from "react-native-elements";
+import { useNavigation } from "react-navigation-hooks";
 
 //components
 import Navbar from "../components/Navbar";
@@ -13,8 +14,10 @@ function Main() {
     img2: require("../../assets/brasildefato.jpg")
   };
 
+  const { navigate } = useNavigation();
+
   return (
-    <>
+    <View style={{ backgroundColor: "#EEEEEE", flexGrow: 1 }}>
       <Navbar />
       <NavigationButtons />
       <Text style={styles.title}>Noticias</Text>
@@ -29,17 +32,23 @@ function Main() {
 
       <View style={{ marginHorizontal: 20, marginTop: 40 }}>
         <Button
-          title="Quero Ajudar!"
-          buttonStyle={{ backgroundColor: "#db0024", borderRadius: 6 }}
+          title="Quero ajudar!"
+          buttonStyle={{ backgroundColor: "#781e7a", borderRadius: 6 }}
           titleStyle={styles.titleButton}
+          onPress={() => {
+            navigate("Ajuda");
+          }}
         />
       </View>
-    </>
+    </View>
   );
 }
 
 const styles = StyleSheet.create({
-  titleButton: { fontSize: 20, fontFamily: "PoetsenOne-Regular" },
+  titleButton: {
+    fontSize: 20,
+    fontFamily: "PoetsenOne-Regular"
+  },
   title: {
     fontSize: 28,
     fontFamily: "PoetsenOne-Regular",

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { View } from "react-native";
 import Navbar from "../components/Navbar";
 import SearchComponent from "../components/SearchComponent";
 import CardEventos from "../components/CardEventos";
@@ -11,7 +11,7 @@ function Eventos() {
   };
 
   return (
-    <>
+    <View style={{ backgroundColor: "#EEEEEE", flexGrow: 1 }}>
       <Navbar />
       <SearchComponent title="Eventos" />
       <CardEventos
@@ -24,7 +24,7 @@ function Eventos() {
         local="Juazeiro do Norte/CE"
         details="TOMECOOL ed. Pré Carnavrau, O bloquinho da TOMECOOL garante para você uma festa recheada de músicas incríveis, calor humano, gente bonita e muitas outras surpresinhas! Bora abalar?"
       />
-    </>
+    </View>
   );
 }
 

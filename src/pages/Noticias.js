@@ -1,5 +1,5 @@
 import React from "react";
-import { WebView } from "react-native-webview";
+import { WebView, View } from "react-native-webview";
 
 import Navbar from "../components/Navbar";
 

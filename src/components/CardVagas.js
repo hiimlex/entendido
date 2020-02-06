@@ -41,7 +41,11 @@ function CardVagas(props) {
             onPress={() => {
               setVisible(false);
             }}
-            titleStyle={{ fontSize: 18, fontWeight: "bold" }}
+            titleStyle={{
+              fontSize: 18,
+              fontWeight: "bold",
+              color: [color]
+            }}
           />
         </>
       </Overlay>

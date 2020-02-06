@@ -6,7 +6,7 @@ import CardVagas from "../components/CardVagas";
 
 function Trabalho() {
   return (
-    <>
+    <View style={{ backgroundColor: "#EEEEEE", flexGrow: 1 }}>
       <Navbar route="Oportunidades" />
       <SearchComponent title="Vagas de emprego" />
       <View style={{ marginTop: 10 }}>
@@ -21,7 +21,7 @@ function Trabalho() {
           documentos="RG, CPF, Histórico Escolar ou Certificado de Conclusão do Ensino Médio."
         />
       </View>
-    </>
+    </View>
   );
 }
 

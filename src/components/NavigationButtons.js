@@ -20,7 +20,7 @@ function NavigationButtons() {
             icon={{
               name: "building",
               type: "font-awesome",
-              color: "#696969",
+              color: "#000",
               size: 24
             }}
             overlayContainerStyle={{ backgroundColor: "white" }}
@@ -38,7 +38,7 @@ function NavigationButtons() {
             icon={{
               name: "bullhorn",
               type: "font-awesome",
-              color: "#696969",
+              color: "#000",
               size: 24
             }}
             overlayContainerStyle={{ backgroundColor: "white" }}
@@ -56,7 +56,7 @@ function NavigationButtons() {
             icon={{
               name: "handshake-o",
               type: "font-awesome",
-              color: "#696969",
+              color: "#000",
               size: 24
             }}
             overlayContainerStyle={{ backgroundColor: "white" }}
@@ -65,7 +65,7 @@ function NavigationButtons() {
             }}
             activeOpacity={0.9}
           />
-          <Text style={styles.subtitle}>Centrais de Apoio</Text>
+          <Text style={styles.subtitle}>Locais de Apoio</Text>
         </View>
       </View>
     </View>
