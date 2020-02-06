@@ -60,6 +60,7 @@ function CardVagas(props) {
 
 const styles = StyleSheet.create({
   card: {
+    flexGrow: 1,
     width: "auto",
     height: "auto",
     elevation: 6,

@@ -26,12 +26,11 @@ function CardEventos(props) {
           <Button
             title="Fechar"
             type="clear"
-            color={color}
             containerStyle={{
               alignItems: "flex-end",
               justifyContent: "flex-end"
             }}
-            titleStyle={{ fontSize: 18, fontWeight: "bold" }}
+            titleStyle={styles.btntitle}
             onPress={() => {
               setVisible(false);
             }}
@@ -62,6 +61,11 @@ const styles = StyleSheet.create({
     textAlign: "justify",
     marginHorizontal: 10,
     marginVertical: 2
+  },
+  btntitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color: [color]
   }
 });
 

@@ -11,6 +11,10 @@ function Ajuda() {
   const [checked3, setChecked3] = useState(false);
   const [visible, setVisible] = useState(false);
   const [text, setText] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [contato, setContato] = useState("");
+  const [org, setOrg] = useState("");
 
   return (
     <View style={{ backgroundColor: "#EEEEEE", flexGrow: 1 }}>
@@ -165,7 +169,8 @@ const styles = StyleSheet.create({
   },
   groupbtn: {
     flexDirection: "row",
-    justifyContent: "space-around"
+    justifyContent: "space-around",
+    marginHorizontal: "auto"
   },
   overlay: {
     width: 370,
