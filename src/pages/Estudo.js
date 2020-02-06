@@ -3,7 +3,7 @@ import { View, SafeAreaView, ScrollView } from "react-native";
 
 import Navbar from "../components/Navbar";
 import SearchComponent from "../components/SearchComponent";
-import CardVagas from "../components/CardVagas";
+import CardEstudo from "../components/CardEstudo";
 
 function Estudo() {
   return (
@@ -13,23 +13,23 @@ function Estudo() {
       <SafeAreaView>
         <ScrollView>
           <View style={{ marginTop: 10, marginVertical: 20 }}>
-            <CardVagas
+            <CardEstudo
               text="CRAS abre Turmas para EJA no Bairro João Cabral."
               requisitos="Serão aceitos alunos com idade a partir de 18 anos."
               documentos="RG, CPF, Trânsferência."
             />
-            <CardVagas
+            <CardEstudo
               text="Cursos Técnicos Profissionalizantes."
               requisitos="Serão aceitos alunos que já concluírem o Ensino fundamental."
               documentos="RG, CPF, Trânsferência."
             />
 
-            <CardVagas
+            <CardEstudo
               text="Cursos de Design de Sombrancelha."
               requisitos="Vaga limitadas ao público LGBTQI+"
               documentos="RG, CPF, Trânsferência."
             />
-            <CardVagas
+            <CardEstudo
               text="Vagas para cursos superiores."
               requisitos="Serão aceitos alunos que já concluírem o Ensino Médio e obtiveram o coeficiente de rendimento maior que 8."
               documentos="RG, CPF, Trânsferência."

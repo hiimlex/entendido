@@ -16,17 +16,14 @@ function Apoio() {
       const { granted } = await requestPermissionsAsync();
 
       if (granted) {
-        const { coords } = await getCurrentPositionAsync({
-          enableHighAccuracy: true
-        });
-
-        const { latitude, longitude } = coords;
+        const latitude = -3.731666;
+        const longitude = -38.5316531;
 
         setCurrentRegion({
           latitude,
           longitude,
-          latitudeDelta: 0.15,
-          longitudeDelta: 0.15
+          latitudeDelta: 0.8,
+          longitudeDelta: 0.8
         });
       }
     }

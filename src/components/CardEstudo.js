@@ -4,7 +4,7 @@ import { Overlay, Button } from "react-native-elements";
 
 import color from "./color";
 
-function CardVagas(props) {
+function CardEstudo(props) {
   const [visible, setVisible] = useState(false);
 
   const SetIsVisible = () => {
@@ -26,10 +26,7 @@ function CardVagas(props) {
               Pre-Requisitos: {props.requisitos} {"\n"}
             </Text>
             <Text style={styles.text}>
-              Documentos Necessários: {props.documentos} {"\n"}
-            </Text>
-            <Text style={styles.contato}>
-              Email para contato: {props.email}
+              Documentos Necessários: {props.documentos}
             </Text>
           </View>
 
@@ -97,14 +94,7 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "justify",
     marginHorizontal: 10
-  },
-  contato: {
-    fontSize: 20,
-    fontWeight: "400",
-    textAlign: "justify",
-    marginHorizontal: 10,
-    marginVertical: 2
   }
 });
 
-export default CardVagas;
+export default CardEstudo;
