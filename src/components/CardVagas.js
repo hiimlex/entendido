@@ -29,7 +29,8 @@ function CardVagas(props) {
               Documentos Necessários: {props.documentos} {"\n"}
             </Text>
             <Text style={styles.contato}>
-              Email para contato: {props.email}
+              Email para contato: {"\n"}
+              {props.email}
             </Text>
           </View>
 
